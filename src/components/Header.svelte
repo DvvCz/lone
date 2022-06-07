@@ -2,7 +2,7 @@
     import Logo from "../components/Logo.svelte";
 
     import Button, { Label } from "@smui/button";
-    import IconButton, { Icon } from "@smui/icon-button";
+    import Fab, { Icon } from "@smui/icon-button";
     import TopAppBar, { Row, Section } from "@smui/top-app-bar";
 
     let lightMode = false;
@@ -22,15 +22,21 @@
                     <Logo/>
                 </Section>
                 <Section>
-                    <Button on:click={() => lightMode = !lightMode}>
-                        <Label>Default</Label>
-                    </Button>
-                </Section>
-                <Section>
-                    <IconButton toggle bind:pressed={lightMode}>
-                        <Icon class="material-icons" on>dark_mode</Icon>
-                        <Icon class="material-icons">light_mode</Icon>
-                    </IconButton>
+                    <Fab color="secondary">
+                        <Icon class="material-icons">check</Icon>
+                    </Fab>
+                    <Fab color="secondary">
+                        <Icon class="material-icons">download</Icon>
+                    </Fab>
+                    <Fab color="secondary">
+                        <Icon class="material-icons">sim_card_download</Icon>
+                    </Fab>
+                    <Fab color="secondary">
+                        <Icon class="material-icons">dvr</Icon>
+                    </Fab>
+                    <Fab color="secondary">
+                        <Icon class="material-icons">timeline</Icon>
+                    </Fab>
                 </Section>
             </Row>
         </TopAppBar>
