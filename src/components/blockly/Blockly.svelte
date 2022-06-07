@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import Blockly from 'blockly';
+
     onMount(() => {
         Blockly.inject(document.getElementById("blocklyDiv"), {
             toolbox: document.getElementById("toolbox")
@@ -21,6 +22,6 @@
 <div>
     <div id="blocklyDiv" />
     <xml id="toolbox" style="display:none">
-        <slot />
+        <slot/>
     </xml>
 </div>

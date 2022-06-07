@@ -1,5 +1,7 @@
 <script lang="ts">
-	import Blockly from "../components/Blockly.svelte";
+	import Category from "../components/blockly/Category.svelte";
+	import Blockly from "../components/blockly/Blockly.svelte";
+
 	import Header from "../components/Header.svelte";
 </script>
 
@@ -11,8 +13,8 @@
 <section>
 	<Header/>
 	<Blockly>
-		<category colour=100 name="Control"/>
-		<category colour=200 name="Operators"/>
+		<Category name="Control" color=200/>
+		<Category name="Operators" color=210/>
 
 		<sep/>
 
