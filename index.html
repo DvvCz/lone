@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/lone/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content=""><title>Home</title><meta name="description" content="Lone IDE" data-svelte="svelte-27zv6a">
-	<link rel="stylesheet" href="/lone/_app/immutable/assets/pages/index.svelte-6c5d5541.css">
-	<link rel="modulepreload" href="/lone/_app/immutable/start-89d61afe.js">
-	<link rel="modulepreload" href="/lone/_app/immutable/chunks/index-54ae59b6.js">
-	<link rel="modulepreload" href="/lone/_app/immutable/layout.svelte-323690ba.js">
-	<link rel="modulepreload" href="/lone/_app/immutable/pages/index.svelte-82d6d10c.js">
-	</head>
-	<body>
-		<div>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="/lone/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Material Icons -->
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	/>
+	<!-- Roboto -->
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700"
+	/>
+	<!-- Roboto Mono -->
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+	/>
+
+	<!-- SMUI Styles -->
+	<link rel="stylesheet" href="/lone/smui.css" media="(prefers-color-scheme: light)" />
+	<link
+		rel="stylesheet"
+		href="/lone/smui-dark.css"
+		media="screen and (prefers-color-scheme: dark)"
+	/>
+	
+	<meta http-equiv="content-security-policy" content=""><title>Home</title><meta name="description" content="Lone IDE" data-svelte="svelte-r6um8k">
+	<link rel="stylesheet" href="/lone/_app/immutable/assets/pages/index.svelte-6ee93291.css">
+	<link rel="modulepreload" href="/lone/_app/immutable/start-3befa7e8.js">
+	<link rel="modulepreload" href="/lone/_app/immutable/chunks/index-1078581c.js">
+	<link rel="modulepreload" href="/lone/_app/immutable/layout.svelte-18eda6ba.js">
+	<link rel="modulepreload" href="/lone/_app/immutable/pages/index.svelte-db063e1b.js">
+</head>
+<body>
+	<div>
 
 
 
 
-<section>
-<div><div id="blocklyDiv" class="svelte-7n30jo"></div>
+<section><section><div id="header" class="svelte-56g5y4">Header
+    </div>
+    <button class="mdc-button" style=""><div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Default</span></button></section>
+	<div><div id="blocklyDiv" class="svelte-mv1y66"></div>
     <xml id="toolbox" style="display:none"><category name="Functions" custom="PROCEDURE"></category>
 		<category name="Variables" custom="VARIABLE"></category>
-		<block type="text_charAt"><value name="VALUE"><block type="variables_get"><field name="VAR">text</field></block></value></block></xml></div></section>
+		<category name="Propeller"><block type="text_charAt"><value name="VALUE"><block type="variables_get"><field name="VAR">text</field></block></value></block></category></xml></div></section>
 
 
-		<script type="module" data-sveltekit-hydrate="zc9rme">
-		import { start } from "/lone/_app/immutable/start-89d61afe.js";
+		<script type="module" data-sveltekit-hydrate="1hn076c">
+		import { start } from "/lone/_app/immutable/start-3befa7e8.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="zc9rme"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1hn076c"]').parentNode,
 			paths: {"base":"/lone","assets":"/lone"},
 			session: {},
 			route: true,
@@ -42,5 +70,5 @@
 			}
 		});
 	</script></div>
-	</body>
+</body>
 </html>
