@@ -14,6 +14,7 @@ jobs:
         - name: Build index.html
           run: |
             npm i
+            npm run prepare
             npm run build
 
         - name: Deploy to gh-pages

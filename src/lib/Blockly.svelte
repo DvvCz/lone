@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { onMount } from 'svelte';
     import Blockly from 'blockly';
     onMount(() => {
@@ -10,7 +10,7 @@
 
 <style scoped>
     #blocklyDiv {
-        height: 100%;
+        height: 90%;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -18,7 +18,6 @@
     }
 </style>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <div>
     <div id="blocklyDiv" />
     <xml id="toolbox" style="display:none">
