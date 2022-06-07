@@ -1,8 +1,6 @@
 <script lang="ts">
-	import Blockly from "$lib/Blockly.svelte";
-	import Header from "$lib/Header.svelte";
-	
-	let Count = 0;
+	import Blockly from "../components/Blockly.svelte";
+	import Header from "../components/Header.svelte";
 </script>
 
 <svelte:head>
@@ -26,3 +24,10 @@
 		</category>
 	</Blockly>
 </section>
+
+<style>
+	:global(body) {
+		margin: 0;
+		padding: 0;
+	}
+</style>
